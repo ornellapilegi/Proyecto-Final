@@ -1,0 +1,117 @@
+/* font-family: 'Slabo 27px', serif;
+font-family: 'Staatliches', cursive; */
+
+.servicio{
+    font-family: 'Slabo 27px', serif;
+    padding: 16px 5px;
+    text-align:center;
+}
+p{
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+    margin-top: 60px;
+    padding-bottom: 30px;
+}
+
+.titulo{
+    font-size: 40px;
+    text-decoration: none;
+    color: #444;
+    font-family: 'Staatliches', cursive;
+}
+
+.titulo:hover{
+    color: rgb(152, 77, 161);
+}
+
+.boton{
+    background-color: rgb(152, 77, 161);
+    border: 8px solid rgb(152, 77, 161);
+    border-radius: 15px;
+    width: 25%;
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    text-decoration-line: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.boton:hover{
+    background-color: rgb(214, 173, 219);
+    border: 8px solid rgb(214, 173, 219);
+    color: rgb(152, 77, 161);
+}
+.insigneas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 50px;
+
+}
+.insignea{
+    width: 30%;
+    text-align: center;
+    background-color: rgb(217, 189, 221);
+    border-radius: 8px;
+    padding: 1px;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    
+}
+.insignea h5{
+    margin: 0;
+    color: rgb(169, 81, 180);
+    font-weight: normal;
+    font-family:'Slabo 27px', serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+.insignea p {
+    font-size: 15px;
+    padding: 5px;
+    text-align: justify;
+    margin: 15px;
+    transition: all 0.5s ease;
+    color: #444;
+
+
+}
+
+.insignea i {
+    font-size: 35px;
+    padding: 40px;
+    color: rgb(152, 77, 161);
+    transition: all 0.5s ease;
+
+}
+
+.insignea:hover {
+    background-color: rgb(152, 77, 161);
+    border-radius: 8px;
+    
+}
+
+.insignea:hover h5{
+    color: white;
+}
+
+.insignea:hover i{
+    color: rgb(214, 173, 219);
+}
+
+.insignea:hover p{
+    color: rgb(214, 173, 219);
+}
+
+.carusel{
+    height: 750px;
+    width: 800px;
+    padding: 15px;
+    margin-bottom: -110px;
+    margin-left: 85px;
+    
+}

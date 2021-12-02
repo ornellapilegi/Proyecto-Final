@@ -1,0 +1,242 @@
+/* font-family: 'Slabo 27px', serif;
+font-family: 'Staatliches', cursive; */
+.container-2{
+    display: flex;
+    padding: 40px;
+}
+
+.container-2 h1, .container-2 h3{
+    margin-left: 55px;
+    margin-top: 20px;
+    font-family: 'Staatliches', cursive; 
+    color: rgb(143, 51, 153);
+}
+.container-2 p{
+    margin-left: 55px ;
+    margin-top: -10px;
+    text-align: justify;
+}
+
+.container-2 h3{
+    margin-bottom: 15px;
+}
+
+.contenedor{
+    display: inline-block;
+}
+
+.contenedor li{
+
+    list-style: none;
+    margin-top: -23px;
+    margin-left: 50px;
+    margin-bottom: 9px;
+    text-align: justify;
+
+}
+
+.contenedor i{
+    margin-left: 25px;
+    font-size: 15px;
+    margin-right: 10px;
+    color: rgb(143, 51, 153);
+}
+
+.adopcion h2{
+    color: rgb(143, 51, 153);
+    font-size: 35px;
+    font-family: 'Staatliches', cursive; 
+    text-align: center;
+    padding: 40px;
+}
+
+.adopcion h2::before {
+    content: "";
+    width: 760px;
+    height: 3px;
+    display: inline-block;
+    background: rgb(187, 140, 192);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -125px;
+    margin: 38px auto;
+}
+
+.container-1{
+    display: flex;
+    padding: 10px;
+}
+
+.container-1 nav{
+    background-color: rgb(249, 236, 250);
+
+}
+
+.container-1 a{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(143, 51, 153);
+    margin-right: 35px;
+    font-family: 'Staatliches', cursive;
+
+}
+
+.container-1 a:hover{
+    color: rgb(201, 103, 212)
+}
+
+a.active{
+    background-color: rgb(143, 51, 153);
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    color: white;
+}
+
+.adopt h2 {
+    position: relative;
+    margin-bottom: 35px;
+    font-family: 'Staatliches', cursive;
+    color: rgb(172, 87, 182);
+}
+
+.adopt h2::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    display: inline-block;
+    background: rgb(172, 87, 182);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    margin: 0 auto;
+}
+
+.adopt .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.5s;
+    position: relative;
+    max-height: 230px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.adopt .box:hover {
+	padding: 30px 30px 70px 30px;
+	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.adopt .box img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+	opacity: 1;
+	transition:all ease 1s; 
+}
+
+.adopt .box:hover img {
+	opacity: 0;
+}
+
+.adopt .box:hover{
+    background-color: rgb(187, 140, 192);
+}
+
+.adopt .box h4 {
+	font-size: 24px;
+	font-weight: 600;
+	padding: 0;
+	margin: 10px 0;
+	color: #ffffff;
+	text-decoration: none;
+    text-align: center;
+    opacity: 0;
+}
+
+.text{
+    text-align: justify;
+}
+
+.adopt .box ul{
+    text-align: center;
+    margin-left: -30px;
+}
+.adopt .box li {
+	color: #e7bcfc;
+    list-style: none;
+	font-size: 20px;
+	padding: 0;
+    opacity: 0;
+    margin-top: 8px;
+    font-family: 'Slabo 27px', serif;
+
+}
+
+.adopt .box i{
+    color: #e7bcfc;
+    font-size: 25px;
+}
+
+.adopt .box:hover h4,
+.adopt .box:hover li {
+  	color: #fff;
+      opacity: 1;
+}
+
+.adopcion-boton{
+    padding: 15px;
+    margin-left: 420px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Staatliches', cursive; 
+    background-color: rgb(172, 87, 182);
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgb(172, 87, 182);
+    border-radius: 5px;
+}
+
+.adopcion-boton:hover{
+    background-color: rgb(131, 55, 139);
+    border: 2px solid rgb(131, 55, 139);
+    color: white;
+}
+
+.modal-footer button{
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    background-color: rgb(131, 55, 139);
+    border: 2px solid rgb(131, 55, 139);
+    transition: all 0.5s ease;
+}
+
+.modal-footer button:hover{
+    background-color: rgb(189, 116, 197);
+    border: 2px solid rgb(189, 116, 197);
+    color: rgb(131, 55, 139);
+}
+
+form{
+    text-align: justify;
+}
+
+label{
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+}
+
+.atencion{
+    margin-left: 8px ;    
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+    text-align: center;
+
+}

@@ -1,0 +1,70 @@
+/* font-family: 'Slabo 27px', serif;
+font-family: 'Staatliches', cursive; */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card h1{
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-size: 30px;
+}
+ 
+.title {
+    color: grey;
+    font-size: 18px;
+}
+  
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(89, 38, 95);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+button:hover{
+    background-color: rgb(152, 77, 161);
+}
+  
+.red {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(152, 77, 161);
+}
+  
+.red:hover {
+    color: rgb(89, 38, 95);
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(152, 77, 161);
+}
+
+.texto{
+    font-family: 'Slabo 27px', serif;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 80px;
+}
+
+.titulo{
+    margin-top: 80px;
+}

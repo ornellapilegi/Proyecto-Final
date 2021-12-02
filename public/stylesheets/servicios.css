@@ -1,0 +1,104 @@
+/* font-family: 'Slabo 27px', serif;
+font-family: 'Staatliches', cursive; */
+
+.texto{
+    font-family: 'Slabo 27px', serif;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 80px;
+}
+
+.titulo{
+    margin-top: 80px;
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(152, 77, 161);
+}
+
+
+.service .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.5s;
+    position: relative;
+    background-color: rgb(153, 92, 160);
+    max-height: 230px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.service .box:hover {
+	padding: 30px 30px 70px 30px;
+	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.service .box img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0;
+	transition:all ease 1s; 
+}
+
+.service .box:hover img {
+	opacity: 1;
+}
+
+
+.service .box h4 {
+	font-size: 24px;
+	font-weight: 600;
+	padding: 0;
+	margin: 10px 0;
+	color: #ffffff;
+	text-decoration: none;
+    text-align: center;
+}
+
+.text{
+    text-align: justify;
+    font-size: 50px;
+}
+
+.service .box p {
+	color: #e7bcfc;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+    text-align: center;
+}
+
+.service .box:hover h4,
+.service .box:hover p {
+  	color: #fff;
+}
+
+button{
+    background-color: rgb(172, 87, 182);
+    color: white;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 2px solid rgb(128, 45, 138);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.service .box:hover button{
+    opacity: 1;
+    
+}
+
+button:hover{
+    background-color: rgb(128, 45, 138);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(128, 45, 138);
+}

@@ -25,43 +25,43 @@
                                     <div class="col-md-12">
                                         <label for="inputcuestion" class="atencion">¡ATENCIÓN! Completar todos los
                                             campos o su formulario no sera tomado en cuenta.</label>
-                                        <form class="row g-3" action="mailto:direccion@correo.com" method="post"
+                                        <form class="row g-3" action="/turnos" method="post"
                                             enctype="text/plain" novalidate>
                                             <h3>Datos del dueño</h3>
                                             <div class="col-md-6">
                                                 <label for="inputName4" class="form-label">Nombre</label>
-                                                <input type="text" class="form-control" id="inputName4" required>
+                                                <input type="text" class="form-control" id="inputName4" name="nom" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="inputLastname4" class="form-label">Apellido</label>
-                                                <input type="text" class="form-control" id="inputLastname4" required>
+                                                <input type="text" class="form-control" id="inputLastname4" name="apellido" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="inputEmail4" class="form-label">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4" required>
+                                                <input type="email" class="form-control" id="inputEmail4" name="mail" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="inputCelular4" class="form-label">Celular</label>
-                                                <input type="text" class="form-control" id="inputCelular4" required>
+                                                <input type="text" class="form-control" id="inputCelular4" name="cel" required>
                                             </div>
                                             <div class="col-6">
                                                 <label for="inputAddress" class="form-label">Dirección</label>
                                                 <input type="text" class="form-control" id="inputAddress"
-                                                    placeholder="Main St 1234" required>
+                                                    placeholder="Main St 1234" name="direccion" required>
                                             </div>
                                             <h3>Datos para el turno</h3>
                                             <div class="col-md-6">
                                                 <label for="inputName4" class="form-label">Nombre de tu mascota</label>
-                                                <input type="text" class="form-control" id="inputName4" required>
+                                                <input type="text" class="form-control" id="inputName4" name="nombremasc" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="inputName4" class="form-label">¿Cuantos años tiene?</label>
-                                                <input type="text" class="form-control" id="inputName4" required>
+                                                <input type="text" class="form-control" id="inputName4" name="edad" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="inputcuestion" class="form-label">¿Se atendió anteriormente
                                                     con nosotros?</label>
-                                                <select id="inputState" class="form-select">
+                                                <select id="inputState" class="form-select" name="atencion">
                                                     <option selected>Selecciona...</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -72,7 +72,7 @@
                                             <div class="col-md-6">
                                                 <label for="inputcuestion" class="form-label">El turno es
                                                     para...</label>
-                                                <select id="inputState" class="form-select">
+                                                <select id="inputState" class="form-select" name="especialidad">
                                                     <option selected>Selecciona...</option>
                                                     <option>Revisión</option>
                                                     <option>Revisión anual</option>
@@ -91,12 +91,12 @@
                                             <div class="col-md-6">
                                                 <label for="inputcuestion" class="form-label">¿Que día queres el
                                                     turno?</label>
-                                                <input type="date">
+                                                <input type="date" name="dia">
 
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="inputcuestion" class="form-label">Horario</label>
-                                                <select id="inputState" class="form-select">
+                                                <select id="inputState" class="form-select" name="hora">
                                                     <option selected>Selecciona...</option>
                                                     <option>9</option>
                                                     <option>9:30</option>
@@ -127,7 +127,7 @@
                                             <div class="mb-3">
                                                 <label for="message-text" class="col-form-label">¿Queres aclarar algo
                                                     más?</label>
-                                                <textarea class="form-control" id="message-text"></textarea>
+                                                <textarea class="form-control" id="message-text" name="coment"></textarea>
                                             </div>
 
                                             <div class="col-md-12">
@@ -165,29 +165,30 @@
                     respondiendo lo antes posible. ¡Muchas gracias!</p>
             </div>
             <div class="contacto">
-                <form class="row g-3" action="mailto:direccion@correo.com" method="post" enctype="text/plain"
+                <form class="row g-3" action="/turnos" method="post" enctype="text/plain"
                     novalidate>
                     <div class="col-md-6">
                         <label for="inputName4" class="form-label">Nombre y apellido</label>
-                        <input type="name" class="form-control" id="inputName4">
+                        <input type="name" class="form-control" id="inputName4" name="nombre">
                     </div>
                     <div class="col-md-6">
                         <label for="inputphone4" class="form-label">Número de contacto</label>
-                        <input type="phone" class="form-control" id="inputPhone4">
+                        <input type="phone" class="form-control" id="inputPhone4" name="numero">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email </label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nombre@gmail.com">
+                            placeholder="nombre@gmail.com" name="email">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="consulta"></textarea>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
                 </form>
+                <p>{{message}}</p>
                 <div class="patas">
                     <img class="pata" src="images/contacto/pata1.png" height="250px" alt="">
                     <img class="pata" src="images/contacto/pata2.png" height="250px" alt="">

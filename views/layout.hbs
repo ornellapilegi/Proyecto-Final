@@ -35,12 +35,12 @@
             <a href="/index"> <img src="images/icono.png" width="65px" alt="icono"> </a>
             <nav>
                 <ul class="holder">
-                    <li><a class="activo" href="/">Home</a></li>
-                    <li><a href="/nosotros">Nosotros</a></li>
-                    <li><a href="/servicios">Servicios</a></li>
-                    <li><a href="/adopciones">Adopción</a></li>
-                    <li><a href="/galeria">Galería</a></li>
-                    <li><a href="/turnos">Turnos</a></li>
+                    <li><a href="/" class="{{#if isHome}}activo{{/if}}">Home</a></li>
+                    <li><a href="/nosotros" class="{{#if isNosotros}}activo{{/if}}">Nosotros</a></li>
+                    <li><a href="/servicios" class="{{#if isServicios}}activo{{/if}}">Servicios</a></li>
+                    <li><a href="/adopciones" class="{{#if isAdopciones}}activo{{/if}}">Adopción</a></li>
+                    <li><a href="/galeria" class="{{#if isGaleria}}activo{{/if}}">Galería</a></li>
+                    <li><a href="/turnos" class="{{#if isTurnos}}activo{{/if}}">Turnos</a></li>
                 </ul>
             </nav>
         </div>

@@ -1,0 +1,36 @@
+.menu{
+    text-align: center;
+}
+
+.container {
+    margin: 100px auto;
+}
+
+.tamano form{
+    width: 350px;
+    height: 300px;
+    margin-left: 360px;
+
+}
+
+.tamano label{
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+
+}
+ .container button{
+     height: 50px;
+    border-radius: 5px;
+    background-color: rgb(131, 55, 139);
+    border: 2px solid rgb(131, 55, 139);
+    color: white;
+    font-size: 18px;
+    margin-left: 110px;
+    transition: all ease 0.5s;
+}
+
+.container button:hover{
+    background-color: rgb(189, 116, 197);
+    border: 2px solid rgb(189, 116, 197);
+    color: rgb(95, 34, 100);
+}

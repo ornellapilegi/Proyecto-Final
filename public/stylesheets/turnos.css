@@ -28,9 +28,10 @@ font-family: 'Staatliches', cursive; */
     text-align: center;
 }
 
-.boton-turno{
+.boton button{
+    width: 70px;
     text-align: center;
-    margin-left: 355px;
+    margin-left: 375px;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
@@ -40,12 +41,24 @@ font-family: 'Staatliches', cursive; */
     background-color: rgb(131, 55, 139);
     border: 2px solid rgb(131, 55, 139);
     color: white;
+    transition: all ease 0.5s;
 }
 
-.boton-turno:hover{
+.boton button:hover{
     background-color: rgb(189, 116, 197);
     border: 2px solid rgb(189, 116, 197);
     color: rgb(131, 55, 139);
+}
+
+.boton i{
+    color: rgb(214, 181, 218);
+    transition: all ease 0.5s;
+    font-size: 30px;
+}
+
+.boton button:hover i{
+    color: rgb(108, 41, 116);
+    
 }
 
 .modal-footer button{

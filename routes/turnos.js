@@ -14,13 +14,13 @@ router.post('/', async function (req, res, next) {
     var nombre = req.body.nombre;
     var email = req.body.email;
     var numero = req.body.numero;
-    var comentario = req.body.comentario;
+    var comentario = req.body.consulta;
 
 
     var obj = {
         to: 'patitaspeludas@gmail.com',
         subject: 'Contacto',
-        html: nombre + 'se contacto a traves de la web y quiere saber más info a este correo: ' + email + '.<br> Su telefono de contacto es ' + numero + '.<br> y su comentario es: ' + comentario + '.'
+        html: nombre + ' se contacto a traves de la web y quiere saber más info a este correo: ' + email + '.<br> Su telefono de contacto es ' + numero + '.<br> y su comentario es: ' + comentario + '.'
     }
     var transport = nodemailer.createTransport({
         host: process.env.SMTP_HOST,

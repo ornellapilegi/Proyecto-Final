@@ -7,6 +7,7 @@ var logger = require('morgan');
 
 require('dotenv').config();
 
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var nosotrosRouter = require('./routes/nosotros');
@@ -15,6 +16,7 @@ var adopcionesRouter = require('./routes/adopciones');
 var galeriaRouter = require('./routes/galeria');
 var turnosRouter = require('./routes/turnos');
 var loginRouter = require('./routes/admin/login');
+var adminAdopcionesRouter = require('./routes/admin/adopciones');
 
 var app = express();
 
@@ -28,6 +30,27 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: 'gfd6gf6gfsd5f5g6sfdfd7sgf6d',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { maxAge: 60000 }
+}));
+
+secured = async function (req, res, next) {
+  try {
+    console.log(req.session.id_usuario)
+
+    if (req.session.id_usuario) {
+      next()
+    } else {
+      res.redirect('/admin/login')
+    }
+  } catch (error) {
+    console.log(error)
+  }
+};
+
 app.use('/', indexRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/servicios', serviciosRouter);
@@ -35,15 +58,16 @@ app.use('/adopciones', adopcionesRouter);
 app.use('/galeria', galeriaRouter);
 app.use('/turnos', turnosRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/adopciones', secured, adminAdopcionesRouter);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

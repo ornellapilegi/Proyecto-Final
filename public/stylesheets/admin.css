@@ -34,3 +34,10 @@
     border: 2px solid rgb(189, 116, 197);
     color: rgb(95, 34, 100);
 }
+
+.usuario{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+
+}

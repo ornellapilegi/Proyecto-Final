@@ -29,7 +29,7 @@ router.post('/', async function (req,res,next) {
     var obj={
         to: 'patitaspeludas@gmail.com',
         subject: 'Contacto',
-        html: nombre + ' ' + apellido + ' acaba de completar la solicitud de adopción. Su mail es ' + email + '.' + ' Su celular es ' + celular + '. Quien esta viviendo en ' + direccion + ', en el barrio de '+ barrio + ', en la ciudad de ' + ciudad + ', con codigo postal ' + cp + ' y vive en un/a' + vivienda + '.<br> Tiene ' + mascotas + ' mascotas. ' + ' Y esta interesado/a por ' + adopcion + '.<br> Dejo el siguiente comentario ' + comentario + '.'
+        html: nombre + ' ' + apellido + ' acaba de completar la solicitud de adopción. Su mail es ' + email + '.' + ' Su celular es ' + celular + '. Quien esta viviendo en ' + direccion + ', en el barrio de '+ barrio + ', en la ciudad de ' + ciudad + ', con codigo postal ' + cp + ' y vive en un/a ' + vivienda + '.<br> Tiene ' + mascotas + ' mascotas. ' + ' Y esta interesado/a por ' + adopcion + '.<br> Dejo el siguiente comentario ' + comentario + '.'
     }
 
     var transport = nodemailer.createTransport({
